@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #343434 inset !important;
+}
+
+ul {
+    list-style: none;
+}
+
+input:-internal-autofill-selected {
+    border: none;
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: #343434 !important;
+    color: fieldtext !important;
+}
+
+::-webkit-scrollbar {
+    width: 1.07vh;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 1.07vh;
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #343434;
+    border-radius: 1.07vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+}
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+}
+
+body {
+    overflow: auto;
+    font-family: NotoSans;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+}

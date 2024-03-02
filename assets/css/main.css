@@ -1,0 +1,286 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 45vh;
+    padding: 4.32vh 3.78vh;
+    background-color: #0f0f0f;
+    border-radius: 1vh;
+}
+
+.profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45vh;
+    max-height: 80vh;
+    padding: 4.32vh 3.78vh;
+    background-color: #0f0f0f;
+    border-radius: 1vh;
+}
+
+.form-logo {
+    text-align: center;
+    color: #019332;
+    font-size: 2.22vh;
+    font-family: Montserrat;
+    margin-bottom: 20px;
+}
+
+.form-logo h1 {
+    font-size: 5.18vh;
+}
+
+.form-logo img {
+    width: 10.36vh;
+}
+
+.title {
+    text-align: center;
+    color: #019332;
+    font-size: 3.03vh;
+    font-family: Montserrat;
+    margin-bottom: 2.2vh;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 1.08vh;
+    background-color: #343434;
+    padding: 0.74vh 0.55vh;
+    border: 0;
+    border-radius: 0.4vh;
+    color: #fff;
+    font-size: 1.42vh;
+    font-family: NotoSans;
+    font-weight: normal;    
+}
+
+textarea::placeholder {
+    color: #aaaaaa;
+}
+
+input {
+    margin-bottom: 1.08vh;
+    background-color: #343434;
+    padding: 0.87vh 0.65vh;
+    font-size: 1.45vh;
+    border: 0;
+    border-radius: 0.4vh;
+    color: #fff;
+}
+
+[name="last_name"] {
+    margin-bottom: 15px;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+button {
+    font-size: 1.45vh;
+    margin-top: 10px;
+    padding: 0.87vh 1.5vh;
+    background-color: #019332;
+    border-radius: 0.4vh;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    transition: 0.2s;
+    background-color: #007928;
+}
+
+.message_err {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #ac0000;
+    padding: 16px 6px;
+    border-radius: 0.4vh;
+    margin-top: 15px;
+}
+
+.message_info {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #0030a8;
+    padding: 1.72vh 0.55vh;
+    border-radius: 0.4vh;
+    margin-top: 1.52vh;
+}
+
+.auth-hint {
+    font-family: Arial;
+    font-size: 1.52vh;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.4vh;
+    margin-top: 1.72vh;
+}
+
+.auth-hint a {
+    text-decoration: none;
+    color: #019332;
+    font-weight: bold;
+}
+
+.auth-hint a:hover {
+    color: #007928;
+}
+
+.profile-info {
+    color: #fff;
+    font-size: 1.95vh;
+    margin-bottom: 1.85vh;
+}
+
+.profile-name {
+    font-size: 2.16vh;
+    margin-bottom: 2.16vh;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.profile-name img {
+    height: 4.4vh;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-email {
+    font-size: 1.72vh;
+}
+
+.profile-transfer-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-bottom: 2.2vh;
+    justify-content: start;
+}
+
+.profile-transfer-form div {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    align-items: baseline;
+    flex-wrap: nowrap;
+}
+
+.profile-transfer-form input {
+    flex-basis: 100px;
+    flex-grow: 1;
+    margin-bottom: 0; /* The buttons must be 100px width. TODO: Fix it */
+}
+
+.profile-transfer-form input[name="amount"] {
+    flex-grow: 0;
+    width: 40%;
+}
+
+.profile-transfer-form button {
+    width: 100%;
+    margin-top: 0;
+}
+
+.history-btn {
+    margin-top: 1.62vh ;
+}
+
+.logout-btn {
+    margin-top: 1.62vh;
+    width: 11vh;
+    float: right;
+    background-color: #ac0000;
+}
+
+.logout-btn:hover {
+    background-color: #880000;
+}
+
+footer {
+    font-size: 1.72vh;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    margin: 3.25vh 0;
+}
+
+.last-element {
+    margin-bottom: 5px;
+}
+
+.mailto {
+    text-decoration: none;
+    color: #019332;
+}
+
+.mailto:hover {
+    color: #007928;
+}
+
+.transfer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea[name="comment"] {
+    margin-bottom: 0.54vh;
+}
+
+.back-btn {
+    margin-top: 1.07vh;
+    width: 100%;
+    background-color: #019332;
+}
+
+.transaction-info {
+    padding: 0.54vh;
+    border-radius: 0.4vh;
+    margin-bottom: 1.62vh;
+}
+
+.transaction-info p {
+    font-size: 1.72vh;
+}
+
+.profile-info-transaction .profile-name {
+    font-size: 2.16vh;
+    margin-bottom: 0.54vh;
+    display: flex;
+    gap: 0.86vh;
+    align-items: center;
+}
+
+.transaction-list {
+    list-style: none;
+    overflow: auto;
+}
+
+.no-transactions-message {
+    text-align: center;
+    margin: 60px 0px;
+}
