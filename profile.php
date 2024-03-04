@@ -7,7 +7,6 @@
     }
 
     unset($_SESSION["user"]["transaction"]);
-    unset($_SESSION["user"]["payment"]);
 
     require_once "vendor/config.php";
     require_once "vendor/connect.php";
@@ -63,15 +62,11 @@
                         </div>
                         <button type="submit">Перевести</button>
                     </form>
-                </div>
-                <div class="profile-transfer">
-                    <h3 class="title">Запросы на оплату</h3>
-                    <form class="profile-transfer-form" action="vendor/create_payment.php" method="post">
+                    <form class="profile-transfer-form last-element" action="transfer.php" method="post">
                         <div>
-                            <input type="number" name="amount" placeholder="Сумма" required>
-                            <!-- Add currency_sign -->
+                            <input type="email" name="receiver_email" placeholder="Email получателя" required>
                         </div>
-                        <button type="submit">Запросить</button>
+                        <button type="submit">Перевести</button>
                     </form>
                 </div>
 

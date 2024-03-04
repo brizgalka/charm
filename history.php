@@ -72,7 +72,7 @@
                                                     <img src='assets/public/user.svg' height=48>
                                                     <div class='profile-details'>
                                                         <p>{$user["first_name"]} {$user["middle_name"]} {$user["last_name"]}</p>
-                                                        <p class='profile-email'>{$user["email"]}</p>
+                                                        <p class='profile-email'>agniya.kaneva@inbox.ru</p>
                                                     </div>
                                                 </div>
                                                 <p>{$method} {$row[$i]['amount']} {$currency_sign}</p>
