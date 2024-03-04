@@ -195,11 +195,6 @@ button:hover {
     margin-bottom: 0; /* The buttons must be 100px width. TODO: Fix it */
 }
 
-.profile-transfer-form input[name="amount"] {
-    flex-grow: 0;
-    width: 40%;
-}
-
 .profile-transfer-form button {
     width: 100%;
     margin-top: 0;

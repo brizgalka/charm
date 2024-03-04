@@ -48,6 +48,7 @@
 
         $receiver_id = intval($receiver_id);
 
+        # Доебаться до user if they EVER try to transfer money to themself
         if($receiver_id === $_SESSION["user"]["id"]) {
             unset($_SESSION['user']['transaction']);
             $_SESSION['message_err'] = 'Чё, сука, самый умный?';

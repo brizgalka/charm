@@ -86,7 +86,7 @@
 
         $stmt->execute();
 
-        $stmt = $connect->prepare("INSERT INTO transactions(sender_id, receiver_id, amount, comment) VALUES (?, ?, ?, ?) ");
+        $stmt = $connect->prepare("INSERT INTO transactions(sender_id, receiver_id, amount, comment) VALUES (?, ?, ?, ?)");
         $stmt->bind_param('iiis', $sender_id, $receiver_id, $amount, $_POST["comment"]);
         $stmt->execute();
 
@@ -95,7 +95,7 @@
         $connect->rollback();
 
         unset($_SESSION['user']['transaction']);
-        $_SESSION['message_err'] = 'Что-то пошло не так. <br> Попробуйте ещё раз позднее';
+        $_SESSION['message_err'] = 'Произошла ошибка при создании записи<br>Попробуйте ещё раз позднее';
         header('Location: ../profile.php');
         exit;
     }
